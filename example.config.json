@@ -1,0 +1,16 @@
+{
+    "title": "My aggregate feed",
+
+    "description": "This feed is made up of many other individual feeds.",
+
+    "link": "http://example.com",
+
+    "output": "atom-1.0",
+
+    "update": "00:05:00",
+
+    "feeds": [
+        "https://www.youtube.com/feeds/videos.xml?user=vsauce",
+        "https://twitrss.me/twitter_user_to_rss/?user=tweetsauce"
+    ]
+}
