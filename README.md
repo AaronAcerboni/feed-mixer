@@ -13,7 +13,7 @@ npm install feed-mixer
 # usage
 
 ```javascript
-var FeedMixer = require('./src/feed-mixer');
+var FeedMixer = require('feed-mixer');
 
 var mixer = new FeedMixer({
     "title": "My aggregate feed",
