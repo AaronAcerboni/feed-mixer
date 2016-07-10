@@ -1,0 +1,35 @@
+{
+  "name": "feed-mixer",
+  "version": "0.0.3",
+  "description": "Transform multiple rss/atom feeds into one rss/atom feed.",
+  "main": "feed-mixer.js",
+  "dependencies": {
+    "feed": "^0.3.0",
+    "feedparser": "^1.1.4",
+    "q": "^1.4.1",
+    "request": "^2.73.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronAcerboni/feed-mixer.git"
+  },
+  "keywords": [
+    "feeds",
+    "rss",
+    "atom",
+    "aggregator",
+    "pipe",
+    "mixer",
+    "mix"
+  ],
+  "author": "Aaron Acerboni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AaronAcerboni/feed-mixer/issues"
+  },
+  "homepage": "https://github.com/AaronAcerboni/feed-mixer#readme"
+}
