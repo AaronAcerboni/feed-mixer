@@ -55,6 +55,7 @@ var mixer = new FeedMixer({
     "description": "This feed is made up of many.",
     "link": "http://example.com",
     "output": "rss-2.0",
+    "update": "00:30:00",
     "feeds": [
         "https://www.youtube.com/feeds/videos.xml?user=vsauce",
         "https://twitrss.me/twitter_user_to_rss/?user=tweetsauce"
