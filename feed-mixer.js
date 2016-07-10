@@ -22,10 +22,7 @@ function Mixer (config) {
     }
 
     // Mixer events interface
-    this.events         = new EventEmitter();
-    this.on             = this.events.on;
-    this.once           = this.events.once;
-    this.removeListener = this.events.removeListener;
+    this.events = new EventEmitter();
  
     // Refresh every {{config.update}}, call mixer.finish/end() to cancel
     if (this.config.update) {
