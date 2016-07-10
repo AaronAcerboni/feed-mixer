@@ -66,7 +66,7 @@ var mixer = new FeedMixer({
 Returns a FeedMixer object with a config specified to JSON source.
 
 ```javascript
-var mixer = new FeedMixer('config.json')
+var mixer = new FeedMixer('./config.json')
 ```
 
 #### FeedMixer.refresh()
