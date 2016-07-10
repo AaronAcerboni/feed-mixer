@@ -1,6 +1,6 @@
 {
   "name": "feed-mixer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Transform multiple rss/atom feeds into one rss/atom feed.",
   "main": "feed-mixer.js",
   "dependencies": {
