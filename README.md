@@ -1,9 +1,9 @@
 # feed-mixer
 
-feed-mixer is a module which transforms multiple rss/atom feed sources into 
-a rss or atom feed.
+feed-mixer is a module which transforms multiple rss/atom feeds into 
+a single rss/atom feed.
 
-It can be a single method use module or it can poll data to a specified time.
+It can be a single method use module or it can poll data every so often.
 
 [Here is an example](https://github.com/AaronAcerboni/feed-mixer-server-example) 
 of it being used in the context of a server.
@@ -31,13 +31,13 @@ var mixer = new FeedMixer({
 // Pattern A
 
 mixer.refresh().then(function (feed) {
-    fs.writeFileSync("output.rss", feed);
+    require('fs').writeFileSync("output.rss", feed);
 });
 
-// Pattern B
+// OR Pattern B
 
 mixer.on('refreshComplete', function (feed) {
-    fs.writeFileSync("output.rss", feed);
+    require('fs').writeFileSync("output.rss", feed);
 });
 
 mixer.refresh();
