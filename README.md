@@ -41,7 +41,7 @@ mixer.on('refreshComplete', function (feed) {
 mixer.refresh();
 ```
 
-### api
+### API
 
 #### FeedMixer(config)
 
@@ -51,7 +51,7 @@ Returns a FeedMixer object
 
 Returns a FeedMixer object with a config specified to JSON source.
 
-e.g. `new FeedMixer('./myConfig.json')
+e.g. `new FeedMixer('./myConfig.json')`
 
 #### FeedMixer.refresh()
 
@@ -80,7 +80,7 @@ Stop the automatic polling/refreshing of the aggregate feed.
 ### config options
 
 Config is either supplied in the constructor argument or as a 
-resource string.
+resource string to a JSON file.
 
 ```
 name:        Your aggregate feed name
