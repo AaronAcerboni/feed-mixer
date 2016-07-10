@@ -15,6 +15,7 @@ module.exports = Mixer;
 // App
 
 function Mixer (config) {
+    var that = this;
     if (typeof config === 'string') {
         this.config = JSON.parse(fs.readFileSync(config, 'utf8'));
     } else {
@@ -26,8 +27,9 @@ function Mixer (config) {
  
     // Refresh every {{config.update}}, call mixer.finish/end() to cancel
     if (this.config.update) {
-        this.polling = setInterval(this.refresh,
-                                util.configTimeToMs(this.config.update))
+        this.polling = setInterval(function () {
+            that.refresh();
+        }), util.configTimeToMs(this.config.update))
     }
 }
 
