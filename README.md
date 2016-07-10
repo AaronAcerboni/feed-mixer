@@ -3,8 +3,10 @@
 feed-mixer is a module which transforms multiple rss/atom feed sources into 
 a rss or atom feed.
 
-It can be a single method use module or it can poll data to a specified time 
-and 
+It can be a single method use module or it can poll data to a specified time.
+
+[Here is an example](https://github.com/AaronAcerboni/feed-mixer-server-example) 
+of it being used in the context of a server.
 
 ```
 npm install feed-mixer
