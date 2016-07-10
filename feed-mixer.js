@@ -29,7 +29,7 @@ function Mixer (config) {
     if (this.config.update) {
         this.polling = setInterval(function () {
             that.refresh();
-        }), util.configTimeToMs(this.config.update))
+        }, util.configTimeToMs(this.config.update));
     }
 }
 
