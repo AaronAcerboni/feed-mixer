@@ -88,7 +88,7 @@ mixer.refresh().then(function (feed) {
 
 #### FeedMixer.aggregate
 
-Returns a traversable option of the aggregate feed in the format of the 
+Returns a traversable object of the aggregate feed in the format of the 
 [feed](https://github.com/jpmonette/feed) module.
 
 ```javascript
